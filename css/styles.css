@@ -903,6 +903,7 @@ img {
 }
 
 .agreement-title {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -931,14 +932,14 @@ img {
   transition: all 250ms var(--primary-cubic);
 }
 
+.checkbox:focus + .icon {
+  outline: 1px solid var(--accent-color);
+}
+
 .checkbox:checked + .icon {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   border-color: var(--accent-color);
-  /* background-origin: border-box; */
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .agreement-title {
@@ -947,11 +948,13 @@ img {
 
 .agreement-link {
   color: var(--accent-color);
+  margin-left: 4px;
 
   transition: color 250ms var(--primary-cubic);
 }
 
-.agreement-link:hover {
+.agreement-link:hover,
+.agreement-link:focus {
   color: var(--hero-button-hover);
 }
 
