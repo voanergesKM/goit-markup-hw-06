@@ -649,7 +649,7 @@ img {
 }
 
 .join {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .join .title {
@@ -900,6 +900,7 @@ img {
 
 .agreement {
   margin-bottom: 30px;
+  margin-left: 25px;
 }
 
 .agreement-title {
@@ -922,6 +923,10 @@ img {
 }
 
 .icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  margin-left: -25px;
   display: inline-block;
   width: 16px;
   height: 15px;
